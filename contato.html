@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Alexsandro - Contato</title>
     <link rel="stylesheet" href="/css/site.css">
     <style>
         html{
@@ -25,6 +25,21 @@
 
         nav ul li:hover{
             background-color: yellow;
+        }
+        #limpar{
+            background-color: blueviolet;
+            border-radius: 4px;
+            border: 1px solid gray;
+            color: yellow;
+            padding: 2px;
+        }
+
+        #enviar{
+            background-color: blueviolet;
+            border-radius: 4px;
+            border: 1px solid gray;
+            color: yellow;
+            padding: 2px;
         }
     </style>
 </head>
@@ -48,7 +63,21 @@
     <main>
 
         <h2>Página de Contato</h2>
-        <p>Chamaaaa</p>
+        <form action="mailto:alexsandro19031@hotmail.com?subject=Contato via site pessoal" method="post" enctype="text/plain"></form>
+
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" placeholder="Insira seu nome:">
+        <br>
+        <label for="telefone">Telefone: </label>
+        <input type="text" telefone="telefone" id="telefone" placeholder="Telefone" >
+        <br>
+        <label for="assunto">Assunto: </label>
+        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+        <br>
+        <input type="reset" value="Resetar" id="limpar">
+        <input type="submit" value="Enviar" id="enviar">
+        <hr>
+        <a href="">Prefere gmail?</a>
 
     </main>
 
